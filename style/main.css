@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+}
+
+#container{
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -200px;
+}
+
+#board{
+    width: 360px;
+    height: 360px;
+    font-size: 0;
+    margin: 20px auto 10px;
+}
+.cell{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 120px;
+    width: 120px;
+    background-color: #333;
+    border: 1px solid #fff;
+    cursor: pointer;
+    vertical-align: top;
+
+    transition: background-color 0.1s ease-in-out 0s;
+}
+.cell:hover{
+    background-color: #666;
+}
+.cell div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 80px;
+    display: none;
+}
+.cell .X{
+    color: rgb(226, 21, 21);
+}
+.cell .O{
+    color: rgb(20, 224, 20);
+}
+
+#control{
+    height: 30px;
+    text-align: center;
+    margin: 0 20px 10px;
+    font-size: 0;
+}
+#control button{
+    height: 30px;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+    opacity: 1;
+
+    transition: opacity 0.1s ease-in-out 0s;
+}
+#xBtn{
+    width: 39%;
+    background-color: rgb(226, 21, 21);
+}
+#oBtn{
+    width: 39%;
+    margin: 0 2%;
+    background-color: rgb(20, 224, 20);
+}
+#reBtn{
+    width: 18%;
+    background-color: #333;
+}
+#control button:hover{
+    opacity: 0.8;
+}
+
+#tip{
+    height: 20px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 20px;
+}
